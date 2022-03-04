@@ -1,0 +1,19 @@
+{
+    "name": "team-profiling-and-coffee",
+    "version": "1.0.0",
+    "description": "A command line function for generating basic profiles for team members",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "watch": "nodemon index",
+        "test": "jext"
+    },
+    "author": "Lawrence Blundo",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^8.2.0"
+    },
+    "devDependencies": {
+        "jest": "^27.5.1"
+    }
+}
