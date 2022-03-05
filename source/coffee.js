@@ -97,8 +97,9 @@ module.exports = teamMates => {
         <div class = 'jumbotron display-4'> My Team </div>
 
         <main>
-            
-            ${coffeeGroup(teamMates)}
+            <div class = "card-deck">
+                ${coffeeGroup(teamMates)}
+            </div>
             
         </main>
 
