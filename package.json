@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node index",
         "watch": "nodemon index",
-        "test": "jext"
+        "test": "jest"
     },
     "author": "Lawrence Blundo",
     "license": "ISC",
