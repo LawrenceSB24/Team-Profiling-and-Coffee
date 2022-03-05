@@ -6,7 +6,6 @@ it('should be testing to see if we can get the values from constructor for the e
     expect(engineer.id).toBe('456720');
     expect(engineer.email).toBe('B.Schwang@gmail.com');
     expect(engineer.gitName).toBe('B.Schwang2');
-
 });
 
 it('should be testing for name retrieval using getName()', () => {
