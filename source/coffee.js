@@ -7,13 +7,17 @@ const coffeeGroup = (teamMates) => {
         let managerWeb = `
         <div class = 'card'>
             <div class = 'card-header'>
-                ${manager.name} <br/>
-                <ul>
-                    <li> Id: ${manager.employId} </li>
-                    <li> Email Address:<a href = ${manager.email}> ${manager.email}</a></li>
-                    <li> Office Number: ${manager.officeId} </li>
-                </ul>
+                <h2>${manager.name}</h2> 
+                <br/>
             </div>
+            <div class = "card-body"
+                <div class = "card-text>
+                    <ul>
+                        <li> Id: ${manager.id} </li>
+                        <li> Email Address:<a href = ${manager.email}> ${manager.email}</a></li>
+                        <li> GitHub Username: ${manager.gitName} </li>
+                    </ul>
+                </div>
         </div>`;
         teamWeb.push(managerWeb);
     }
@@ -23,13 +27,17 @@ const coffeeGroup = (teamMates) => {
         let engineerWeb = `
         <div class = 'card'>
             <div class = 'card-header'>
-                ${engineer.name} <br/>
-                <ul>
-                    <li> Id: ${engineer.employId} </li>
-                    <li> Email Address:<a href = ${engineer.email}> ${engineer.email}</a></li>
-                    <li> GitHub Username: ${engineer.gitName} </li>
-                </ul>
+                <h2>${engineer.name}</h2> 
+                <br/>
             </div>
+            <div class = "card-body"
+                <div class = "card-text>
+                    <ul>
+                        <li> Id: ${engineer.id} </li>
+                        <li> Email Address:<a href = ${engineer.email}> ${engineer.email}</a></li>
+                        <li> GitHub Username: ${engineer.gitName} </li>
+                    </ul>
+                </div>
         </div>`;
         teamWeb.push(engineerWeb);
     }
@@ -39,13 +47,17 @@ const coffeeGroup = (teamMates) => {
         let internWeb = `
         <div class = 'card'>
             <div class = 'card-header'>
-                ${intern.name} <br/>
-                <ul>
-                    <li> Id: ${intern.employId} </li>
-                    <li> Email Address:<a href = ${intern.email}> ${intern.email}</a></li>
-                    <li> GitHub Username: ${intern.gitName} </li>
-                </ul>
+                <h2>${intern.name}</h2> 
+                <br/>
             </div>
+            <div class = "card-body"
+                <div class = "card-text>
+                    <ul>
+                        <li> Id: ${intern.id} </li>
+                        <li> Email Address:<a href = ${intern.email}> ${intern.email}</a></li>
+                        <li> GitHub Username: ${intern.gitName} </li>
+                    </ul>
+                </div>
         </div>`;
         teamWeb.push(internWeb);
     }
@@ -64,7 +76,7 @@ const coffeeGroup = (teamMates) => {
         }
     }
 
-    return teamMates.join('');
+    return teamWeb.join('');
 }
 
 module.exports = teamMates => {
