@@ -21,7 +21,7 @@ it('should be testing for email retrieval using getEmail()', () => {
     expect(engineer.getEmail()).toBe('B.Schwang@gmail.com')
 });
 
-it('should be testing for office ID retrieval using getGitName()', () => {
+it('should be testing for GitHub username retrieval using getGitName()', () => {
     expect(engineer.getGitName()).toBe('B.Schwang2');
 });
 
