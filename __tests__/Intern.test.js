@@ -17,11 +17,11 @@ it('should be testing for for retrieval for id retrieval using getId()', () => {
 });
 
 it('should be testing for for retrieval for email retrieval using getEmail()', () => {
-    expect(intern.getEmail('J.Francois@outlook.com')).toBe('Jean');
+    expect(intern.getEmail()).toBe('J.Francois@outlook.com');
 });
 
 it('should be testing for for retrieval for school retrieval using getSchool()', () => {
-    expect(intern.getSchool('St.Luke de Bon University')).toBe('Jean');
+    expect(intern.getSchool()).toBe('St.Luke de Bon University');
 });
 
 it('should be testing for the role of the team member using getRole()', () => {
