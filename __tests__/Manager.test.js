@@ -17,11 +17,11 @@ it('should be testing for for retrieval for id retrieval using getId()', () => {
 });
 
 it('should be testing for for retrieval for email retrieval using getEmail()', () => {
-    expect(manager.getEmail('M.Jammeson@hotmail.com')).toBe('Jean');
+    expect(manager.getEmail()).toBe('M.Jammeson@hotmail.com');
 });
 
 it('should be testing for for retrieval for officeId retrieval using getOfficeId()', () => {
-    expect(manager.getOfficeId('666')).toBe('Jean');
+    expect(manager.getOfficeId()).toBe('666');
 });
 
 it('should be testing for the role of the team member using getRole()', () => {
