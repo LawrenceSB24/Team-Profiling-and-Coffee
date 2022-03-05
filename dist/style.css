@@ -5,6 +5,10 @@ main {
     color: black;
 }
 
+.jumbotron {
+    background-color: linear-gradient(magenta, navy);
+}
+
 .card {
     margin: 10px;
     padding: 5px;
