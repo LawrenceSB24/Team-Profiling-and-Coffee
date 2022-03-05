@@ -2,7 +2,7 @@ const Intern = require('../lib/Intern');
 const intern = new Intern('Jean','657023','J.Francois@outlook.com','St.Luke de Bon University');
 
 it('should be testing to see if we get values from constructor for the intern object', () => {
-expect(intern.name).toBe('Jean');
+    expect(intern.name).toBe('Jean');
     expect(intern.id).toBe('657023');
     expect(intern.email).toBe('J.Francois@outlook.com');
     expect(intern.school).toBe('St.Luke de Bon University');
