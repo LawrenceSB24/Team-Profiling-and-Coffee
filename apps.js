@@ -80,7 +80,7 @@ const teamCoffee = () => {
             choices: [
                 'Engineer',
                 'Intern',
-                'Im a lone wolf. All set.'
+                'All set.'
             ]
         }])
         .then(userChoice => {
