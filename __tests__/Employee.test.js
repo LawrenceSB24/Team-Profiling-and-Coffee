@@ -1,4 +1,3 @@
-const { expect } = require('@jest/globals');
 const Employee = require('../lib/Employee');
 const employee = new Employee('Micheal', '87469032','M-Sully@yahoo.com')
 
