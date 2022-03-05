@@ -11,11 +11,11 @@ const coffeeGroup = (teamMates) => {
                 <br/>
             </div>
             <div class = "card-body"
-                <div class = "card-text>
+                <div class = "card-text">
                     <ul>
                         <li> Id: ${manager.id} </li>
-                        <li> Email Address:<a href = ${manager.email}> ${manager.email}</a></li>
-                        <li> GitHub Username: ${manager.gitName} </li>
+                        <li> Email Address:<a href = "${manager.email}"> ${manager.email}</a></li>
+                        <li> GitHub Username: ${manager.officeId} </li>
                     </ul>
                 </div>
         </div>`;
@@ -31,10 +31,10 @@ const coffeeGroup = (teamMates) => {
                 <br/>
             </div>
             <div class = "card-body"
-                <div class = "card-text>
+                <div class = "card-text">
                     <ul>
                         <li> Id: ${engineer.id} </li>
-                        <li> Email Address:<a href = ${engineer.email}> ${engineer.email}</a></li>
+                        <li> Email Address:<a href = "${engineer.email}"> ${engineer.email}</a></li>
                         <li> GitHub Username: ${engineer.gitName} </li>
                     </ul>
                 </div>
@@ -51,11 +51,11 @@ const coffeeGroup = (teamMates) => {
                 <br/>
             </div>
             <div class = "card-body"
-                <div class = "card-text>
+                <div class = "card-text">
                     <ul>
                         <li> Id: ${intern.id} </li>
-                        <li> Email Address:<a href = ${intern.email}> ${intern.email}</a></li>
-                        <li> GitHub Username: ${intern.gitName} </li>
+                        <li> Email Address:<a href = "${intern.email}"> ${intern.email}</a></li>
+                        <li> GitHub Username: ${intern.school} </li>
                     </ul>
                 </div>
         </div>`;
@@ -79,8 +79,7 @@ const coffeeGroup = (teamMates) => {
     return teamWeb.join('');
 }
 
-module.exports = teamMates => {
-    return `
+module.exports = teamMates => {return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
