@@ -64,7 +64,6 @@ const managerCoffee = () => {
             }
         }
     ]).then(answers => {
-        console.log(answers);
         const manager = new Manager(answers.name, answers.employId, answers.email, answers.officeId);
         teamMates.push(manager);
         teamCoffee();
@@ -157,7 +156,6 @@ const promptEngineer = () => {
             }
         }
     ]).then(answers => {
-        console.log(answers);
         const engineer = new Engineer(answers.name, answers.employId, answers.email, answers.gitName);
         teamMates.push(engineer);
         teamCoffee();
@@ -224,7 +222,6 @@ const promptIntern = () => {
             }
         }
     ]).then(answers => {
-        console.log(answers);
         const intern = new Intern(answers.name, answers.employId, answers.email, answers.school);
         teamMates.push(intern);
         teamCoffee();
