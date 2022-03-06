@@ -101,8 +101,10 @@ module.exports = teamWeb => {return `<!DOCTYPE html>
         <div class='jumbotron display-4'> My Team </div>
 
         <main>
-            <div class = "card-deck">
-                ${coffeeGroup(teamWeb)}
+            <div class = "container">
+                <div class = "row">
+                    ${coffeeGroup(teamWeb)}
+                </div>
             </div>
         </main>
 
