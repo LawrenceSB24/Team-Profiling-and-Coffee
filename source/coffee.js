@@ -5,7 +5,7 @@ const coffeeGroup = (teamMates) => {
     const managerSuite = manager => {
         console.log(manager);
         let managerWeb = `
-        <div class = 'card' id = 'manager'>
+        <div class = 'manager'>
             <div class = 'card-header'>
                 <h2>${manager.name}</h2> 
                 <br/>
@@ -26,7 +26,7 @@ const coffeeGroup = (teamMates) => {
     const engineerSuite = engineer => {
         console.log(engineer);
         let engineerWeb = `
-        <div class = 'card' id = 'engineer'>
+        <div class = 'engineer'>
             <div class = 'card-header'>
                 <h2>${engineer.name}</h2> 
                 <br/>
@@ -47,7 +47,7 @@ const coffeeGroup = (teamMates) => {
     const internSuite = intern => {
         console.log(intern);
         let internWeb = `
-        <div class = 'card' id = 'intern'>
+        <div class = 'intern'>
             <div class = 'card-header'>
                 <h2>${intern.name}</h2> 
                 <br/>
@@ -101,11 +101,7 @@ module.exports = teamWeb => {return `<!DOCTYPE html>
         <div class='jumbotron display-4'> My Team </div>
 
         <main>
-            <div class = "container">
-                <div class = "row">
-                    ${coffeeGroup(teamWeb)}
-                </div>
-            </div>
+            ${coffeeGroup(teamWeb)}
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
