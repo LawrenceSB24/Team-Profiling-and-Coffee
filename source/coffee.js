@@ -15,7 +15,7 @@ const coffeeGroup = (teamMates) => {
                     <h3> Manager </h3>
                     <ul class = "list-group list-group-flush">
                         <li class = "list-group-item"><h4> Id: ${manager.id} </h4></li>
-                        <li class = "list-group-item"><h4> Email Address:<a href = "${manager.email}"> ${manager.email}</a></h4></li>
+                        <li class = "list-group-item"><h4> Email Address:<a href = "mailto: ${manager.email}"> ${manager.email}</a></h4></li>
                         <li class = "list-group-item"><h4> Office ID: ${manager.officeId} </h4></li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@ const coffeeGroup = (teamMates) => {
                     <h3> Engineer </h3>
                     <ul class = "list-group list-group-flush">
                         <li class = "list-group-item"><h4> Id: ${engineer.id} </h4></li>
-                        <li class = "list-group-item"><h4> Email Address:<a href = "${engineer.email}"> ${engineer.email}</a></h4></li>
+                        <li class = "list-group-item"><h4> Email Address:<a href = "mailto: ${engineer.email}"> ${engineer.email}</a></h4></li>
                         <li class = "list-group-item"><h4> GitHub Username: ${engineer.gitName} </h4></li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@ const coffeeGroup = (teamMates) => {
                     <h3> Intern </h3>
                     <ul class = "list-group list-group-flush">
                         <li class = "list-group-item"><h4> Id: ${intern.id} </h4></li>
-                        <li class = "list-group-item"><h4> Email Address:<a href = "${intern.email}"> ${intern.email}</a></h4></li>
+                        <li class = "list-group-item"><h4> Email Address:<a href = "mailto: ${intern.email}"> ${intern.email}</a></h4></li>
                         <li class = "list-group-item"><h4> School: ${intern.school} </h4></li>
                     </ul>
                 </div>
