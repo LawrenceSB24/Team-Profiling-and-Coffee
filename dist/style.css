@@ -1,18 +1,28 @@
-main {
-    margin: auto;
-    padding: auto;
+body {
+    margin: 0;
+    padding: 0;
     background-color: darkgray;
     color: black;
 }
 
+main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
 .jumbotron {
-    background-color: linear-gradient(magenta, navy);
+    background-image: linear-gradient(blue, navy);
+    color: aliceblue;
+    text-align: center;
+    overflow: hidden;
 }
 
 .card {
     margin: 10px;
     padding: 5px;
     border: 4px wavy black;
+    width: max-content;
 }
 
 .card-header {
@@ -20,6 +30,13 @@ main {
     color: antiquewhite;
 }
 
+.manager,
+.engineer,
+.intern {
+    display: inline-flex;
+}
+
+ol,
 ul {
-    list-style: none;
+    list-style-type: none;
 }
