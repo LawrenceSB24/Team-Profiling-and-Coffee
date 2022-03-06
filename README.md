@@ -73,5 +73,5 @@ Due to the application mainly being run using command line, there are no deploym
 ## Questions
 For further questions, you can reach out to my GitHub or email me directly
 
-Github: (https://github.com/LawrenceSB24)
+Github: https://github.com/LawrenceSB24
 Email: [Lawrsblundo22@outlook.com](lawrsblundo22@outlook.com)
