@@ -1,3 +1,4 @@
+/* Style and formatting for body of HTML */
 body {
     margin: 0;
     padding: 0;
@@ -5,12 +6,14 @@ body {
     color: black;
 }
 
+/* Formatting for main section */
 main {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 10px;
 }
 
+/* Style and formatting for jumbotron */
 .jumbotron {
     background-image: linear-gradient(blue, navy);
     color: aliceblue;
@@ -18,6 +21,7 @@ main {
     overflow: hidden;
 }
 
+/* Style and formatting for team profile cards */
 .card {
     margin: 10px;
     padding: 5px;
@@ -25,17 +29,20 @@ main {
     width: max-content;
 }
 
+/* Styling for team profile card headers */
 .card-header {
     background-color: brown;
     color: antiquewhite;
 }
 
+/* Formatting for info within each team profile card */
 .manager,
 .engineer,
 .intern {
     display: inline-flex;
 }
 
+/* Removal of list structuring of name, id, email, and custom info for profile cards */
 ol,
 ul {
     list-style-type: none;
