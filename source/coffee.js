@@ -1,12 +1,21 @@
+// JS file responsible for creating HTML page with user input info
+
+// Function for HTML page generation for team profiles
 const coffeeGroup = (teamMates) => {
+    // Local storage for teamMates array
     console.log(teamMates);
+    // Array for HTML file to pull team profiles
     const teamWeb = [];
 
+    // Function for Manager profile card based on input
     const managerSuite = manager => {
+        // Log for manager info
         console.log(manager);
+        // Variable for Manager card generation
         let managerWeb = `
         <div class = 'card manager'>
             <div class = 'card-header'>
+            <! -- Title for card based on name of manager -->
                 <h2>${manager.name}</h2> 
                 <br/>
             </div>
@@ -14,16 +23,20 @@ const coffeeGroup = (teamMates) => {
                 <div class = "card-text">
                     <h3> Manager </h3>
                     <ul class = "list-group list-group-flush">
+                    <!-- Card info generated from the emplyee id, email address, and office id from manager -->
                         <li class = "list-group-item"><h4> Id: ${manager.id} </h4></li>
+                        <!-- mailto: allows for TO field to be filled with manager's email -->
                         <li class = "list-group-item"><h4> Email Address:<a href = "mailto: ${manager.email}"> ${manager.email}</a></h4></li>
                         <li class = "list-group-item"><h4> Office ID: ${manager.officeId} </h4></li>
                     </ul>
                 </div>
             </div>
         </div>`;
+        // managerWeb is pushed into HTML file array as the first card
         teamWeb.push(managerWeb);
     }
 
+    // The engineer and intern cards follow the same format as the manager card
     const engineerSuite = engineer => {
         console.log(engineer);
         let engineerWeb = `
@@ -68,6 +81,7 @@ const coffeeGroup = (teamMates) => {
         teamWeb.push(internWeb);
     }
 
+    // For loop that populates each card with the info for each team member
     for (let i = 0; i < teamMates.length; i++) {
         if (teamMates[i].getRole() === "Manager") {
             managerSuite(teamMates[i]);
@@ -81,9 +95,12 @@ const coffeeGroup = (teamMates) => {
             internSuite(teamMates[i]);
         }
     }
+    // The product returned is the different info cards from teamWeb
     return teamWeb.join('');
 }
 
+// Export for teamWeb module that has basic HTML skeleton
+// The body contains all team profile cards
 module.exports = teamWeb => {
     return `<!DOCTYPE html>
     <html lang="en">
@@ -116,3 +133,5 @@ module.exports = teamWeb => {
 
     </html>`;
 }
+
+// All card and body styling stated using Bootstrap. For more custom styling and format, visit the css file in the dist folder.
